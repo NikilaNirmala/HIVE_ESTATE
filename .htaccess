@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Remove the /hive_estate part from the URL
+RewriteRule ^hive_app/(.*)$ /$1 [L]
+
+# Route all requests to route/routes.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]

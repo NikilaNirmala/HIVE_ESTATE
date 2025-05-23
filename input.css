@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer components {
+   
+    .header-profile {
+        background-color: #f3e8ff; /* Tailwind bg-purple-100 */
+        padding: 1rem; /* Tailwind p-4 */
+        display: flex; /* Tailwind flex */
+        justify-content: space-between; /* Tailwind justify-between */
+        align-items: center; /* Tailwind items-center */
+        position: sticky; /* Tailwind sticky */
+        top: 0; /* Tailwind top-0 */
+        z-index: 10; /* Tailwind z-10 */
+    }
+}
