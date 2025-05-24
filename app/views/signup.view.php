@@ -58,7 +58,7 @@
           <h1 class="text-xl font-bold text-gray-800">Sign Up</h1>
           <div class="flex justify-center mt-4">
             <img
-              src="https://placehold.co/30x30"
+              src="/hive_app/public/images/hive_logo.png"
               alt="HiveEstate Logo"
               class="h-8" />
           </div>

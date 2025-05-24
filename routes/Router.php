@@ -1,5 +1,5 @@
 <?php
-// require_once Helper::absPath('helper.php');
+require_once Helper::absPath('helper.php');
 require_once Helper::absPath('routes/Route.php');
 class Router
 {
@@ -21,7 +21,7 @@ class Router
             }
         }
         if (!$controller) {
-            include Helper::absPath('views/404.view.php');
+            include Helper::absPath('app/views/404.view.php');
             exit;
         }
 

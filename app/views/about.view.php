@@ -25,8 +25,8 @@
         <a href="property" class="text-gray-600 hover:text-purple-600">Property</a>
         <a href="about" class="text-gray-600 hover:text-purple-600">About</a>
         <?php
-        if (isset($_SESSION['username'])) {
-          if ($_SESSION['username'] == 'agent' || $_SESSION['username'] == 'member') {
+        if (isset($_SESSION['role'])) {
+          if ($_SESSION['role'] == 'agent' || $_SESSION['role'] == 'member') {
             echo ' <a href="user_profile" class="text-gray-600 hover:text-purple-600">My Profile</a>';
           } else {
             echo ' <a href="admin_profile" class="text-gray-600 hover:text-purple-600">My Profile</a>';
